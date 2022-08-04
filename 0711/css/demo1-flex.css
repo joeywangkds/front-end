@@ -1,0 +1,64 @@
+@import url(reset.css);
+
+body header, body footer{
+
+    height: 50px;
+    background-color: lightgreen;
+    z-index: 100;
+}
+
+body{
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+body .wrap{
+     background-color: aquamarine;
+     max-width: 1000px;
+     min-height: 1600px;
+     margin: 10px  auto;
+
+     
+
+     position: relative;
+     top: 50px ;
+}
+
+body header{
+    position: fixed;
+    top: 0;
+    left: 0%;
+    right: 0;
+}
+
+body .wrap .left,
+body .wrap .right,
+body .wrap .content{
+    min-width: 200px;
+    min-height: inherit;
+
+    position: absolute;
+    background-color: lightblue;
+}
+
+body .wrap .left{
+    top: 0;
+    left: 0;
+}
+
+body .wrap .right{
+    top: 0;
+    right: 0;
+}
+
+body .wrap .content{
+   left: calc(200px + 10px);
+   right: calc(200px + 10px);
+
+}
+
+body footer{
+    position: sticky;
+    top: 1500px;
+    bottom: 0;
+}
