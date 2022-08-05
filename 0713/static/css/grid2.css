@@ -14,9 +14,9 @@
     gap: 20px 20px; 
 
     /* place-content: start start; */
-    place-content: center;
+    
     place-content: space-between;
-
+    place-content: center;
     place-items: center;
     
 }
