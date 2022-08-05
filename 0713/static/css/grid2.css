@@ -1,0 +1,40 @@
+.container{
+    width: 50em;
+    height: 50em;
+    background-color: wheat;
+
+    display: grid;
+
+    grid-template-columns: repeat( 3 , 10em);
+    grid-template-rows: repeat( 3 , 10em);
+
+    /* grid-auto-flow: column; */
+
+    grid-auto-rows: 10em;
+    gap: 20px 20px; 
+
+    /* place-content: start start; */
+    place-content: center;
+    place-content: space-between;
+
+    place-items: center;
+    
+}
+
+.container .item{
+    background-color: rgb(255, 160, 241);
+    font-size: 2em;
+    text-align: center;
+    outline: 1px solid darkgreen;
+
+    width: 3em;
+    height: 3em;
+    
+
+    /* width: 2em;
+    height: 2em; */
+    /* grid-row: 3/span 1 ;
+    grid-column: 1/ span 3; */
+
+
+}
