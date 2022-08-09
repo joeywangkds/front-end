@@ -7,7 +7,6 @@
     <title>Document</title>
 </head>
 <body>
-
     <script>
         console.log("hello world");
         let a = 20;
@@ -43,6 +42,27 @@
         }
 
         console.log(getUsername2('kawa'));
+
+
+        const arr = ['computer', 2, 5000];
+        console.log(typeof arr);
+        console.log(Array.isArray(arr));
+
+        const obj = {
+            object:'computer',
+            num:2,
+            price:5000,
+            total : function(){
+                return this.object + " price is " + this.num * this.price;
+            }
+        };
+
+        console.log(obj.total());
+
+        
+
+        // console.log(obj.object);
+
 
         
 
