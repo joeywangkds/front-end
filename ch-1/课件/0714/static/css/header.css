@@ -1,0 +1,109 @@
+@import url(reset.css);
+body {
+  background-color: #f3f5f7;
+}
+
+header .top {
+  width: 100vw;
+  height: 40px;
+  background-color: #343434;
+  color: #aaa;
+}
+header .top .content {
+  /* 必须限定宽高,否则无法在父容器中居中 */
+  width: 1200px;
+
+  display: grid;
+  grid-template-columns: 400px 100px;
+  grid-auto-rows: 40px;
+  place-content: space-between;
+  place-items: center start;
+  margin: auto;
+}
+
+/* 钟图标 */
+header .top .content .right .iconfont {
+  color: #eee;
+  font-size: larger;
+}
+
+/* 头像 */
+header .top .content img {
+  width: 50%;
+  border-radius: 50%;
+}
+
+header .top .content .right {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  place-items: center;
+}
+
+header .top .content .title {
+  font-size: larger;
+  /* 加粗 */
+  font-weight: larger;
+}
+
+/* 导航 */
+header .navs {
+  width: 100vw;
+  height: 90px;
+  background-color: #fff;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+header .navs .content {
+  /* 必须限定宽高,否则无法在父容器中居中 */
+  width: 1200px;
+
+  display: grid;
+  grid-template-columns: 140px 1fr 200px;
+  grid-auto-rows: 90px;
+  margin: auto;
+  gap: 10px;
+  place-items: center start;
+}
+
+header .navs .content nav {
+  display: flex;
+}
+
+header .navs .content nav a {
+  padding: 0 10px;
+}
+
+header .navs .content nav a:hover,
+header .navs .content nav a.active {
+  font-weight: bold;
+  color: red;
+}
+
+header .navs .content img {
+  width: 100%;
+}
+header .navs .content .search {
+  display: flex;
+}
+header .navs .content .search input[type='search'] {
+  width: 200px;
+  height: 36px;
+  border: none;
+  background-color: #eee;
+  outline: none;
+  border-radius: 20px;
+  padding-left: 10px;
+}
+
+header .navs .content .search .icon-fangdajing1 {
+  font-size: 22px;
+
+  color: #ccc;
+  position: relative;
+  left: -40px;
+  top: 5px;
+}
+header .navs .content .search .icon-fangdajing1:hover {
+  color: red;
+  /* 小手 */
+  cursor: pointer;
+}

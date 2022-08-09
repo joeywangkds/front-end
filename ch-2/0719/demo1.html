@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <script>
+        console.log("hello world");
+        let a = 20;
+        let b = 30;
+        // console.log(a);
+
+        function sum(a,b){
+      
+           return a + b;
+        }
+
+       
+        console.log(
+            (function(username){
+            return 'hello' + username;
+        })('wala')
+        ); 
+
+        function getUsername(username){
+            return 'hello ' + username;
+        }
+
+        console.log(getUsername('haya'));
+
+        getName = function(username){
+            return 'hello ' + username;
+        }
+
+        console.log(getName('hawa'));
+
+        getUsername2 = username =>{
+            return 'hello ' + username;
+        }
+
+        console.log(getUsername2('kawa'));
+
+        
+
+    </script>
+    
+</body>
+</html>

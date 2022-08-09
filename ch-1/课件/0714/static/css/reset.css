@@ -1,0 +1,19 @@
+/* 样式重置 */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+  color: #555;
+}
+
+body {
+  background-color: rgb(243, 245, 247);
+}
+
+li {
+  list-style: none;
+}

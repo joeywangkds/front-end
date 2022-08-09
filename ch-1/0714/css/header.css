@@ -3,6 +3,7 @@
 
 
 header .topbar{
+    display: flex;
     background-color: #343434;
     width: 100vw;
     height: 40px;

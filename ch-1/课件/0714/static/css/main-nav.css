@@ -1,0 +1,109 @@
+main {
+  /* 因为浏览器默认是16px, 16有点大  */
+  font-size: 14px;
+}
+
+main .navs {
+  /* 2行3列 */
+  display: grid;
+  grid-template-rows: 400px 80px;
+  grid-template-columns: 160px 810px 190px;
+  gap: 20px;
+  place-content: center;
+  margin: 30px 0;
+}
+
+/* 统一样式,完成后可看到基本框架 */
+
+main .navs > * {
+  background-color: #fff;
+  border-radius: 20px;
+}
+
+/* 底部左边占2列 */
+
+main .navs .bottom-left {
+  grid-column: span 2;
+}
+
+/* 整体布局完成,剩下就是细节了 */
+
+/* 上部左边导航 */
+
+main .navs .left {
+  padding: 20px 0;
+  /* grid: 默认每个项目都是"块级", 垂直排列  */
+  /* flex: 默认每个项目都是"行内块级", 水平排列 */
+  display: grid;
+  /* 当前项目在每个网络单元中, 垂直,水平均居中 */
+  /* place-items: 垂直方向  水平方向; */
+  place-items: center;
+}
+
+main .navs .left a {
+  padding: 10px 20px;
+}
+
+main .navs .left a:hover {
+  border-radius: 20px;
+  color: red;
+  background-color: rgb(250, 223, 227);
+}
+
+/* 轮播图,单图模拟 */
+
+main .navs .slider img {
+  width: 100%;
+  border-radius: 20px;
+}
+
+/* 底部左侧 */
+
+main .navs .bottom-left {
+  display: grid;
+  grid-template-columns: 100px 1fr;
+}
+
+main .navs .bottom-left .desc {
+  padding: 16px 0;
+  display: grid;
+  place-items: center;
+}
+
+main .navs .bottom-left .desc span {
+  font-size: 12px;
+  color: #999;
+}
+
+main .navs .bottom-left .detail {
+  display: flex;
+  place-items: center;
+  place-content: space-between;
+  padding: 20px;
+}
+
+main .navs .bottom-left .detail li {
+  display: grid;
+  grid-template-columns: 36px 85px;
+  grid-template-columns: repeat(2, 36);
+  gap: 0 10px;
+  place-items: center start;
+}
+
+main .navs .bottom-left .detail img {
+  width: 100%;
+  grid-row: span 2;
+}
+
+main .navs .bottom-left .detail li a {
+  font-size: 14px;
+}
+
+main .navs .bottom-left .detail li a:hover {
+  color: red;
+}
+
+main .navs .bottom-left .detail li span {
+  font-size: 12px;
+  color: #999;
+}
