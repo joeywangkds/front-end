@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0721</title>
+</head>
+<body>
+    <script>
+        function hello(...user){
+            return user;
+        }
+
+        const arr = ['item1','item2','item3'];
+        console.log(hello(...arr));
+
+
+        // let sum = (a,b) =>(a+b);
+        let sum = (...nums) => nums.reduce((a,c) => (a+c));
+
+        console.log("The result is: " + sum(1,2,3,4,5));
+
+
+        let f = () =>({
+            a:1,
+            b:2,
+            get: function(){
+                return 'ok';
+            }
+        })
+
+        console.log(f());
+
+    </script>
+    
+</body>
+</html>
