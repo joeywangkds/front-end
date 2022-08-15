@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+<script>
+    let shoe={
+        data:{
+            brand: 'nike',
+            price:100,
+        },
+
+        getPrice(){
+            return this.data.price;
+        },
+
+        setPrice(value){
+            this.data.price = value;
+        }
+           
+    }
+
+    console.log(shoe.getPrice());
+    shoe.setPrice(40);
+    console.log(shoe.getPrice());
+
+
+    let shoe2 = {
+        data:{
+            name:'kd14',
+            price:220
+        },
+
+        get name(){
+            return this.data.name;
+        },
+
+        set price($discount){
+            this.data.price = $discount *this.data.price;
+        },
+
+        get price(){
+            return this.data.price;
+        }
+
+    }
+
+    console.log(shoe2.name);
+    shoe2.price=0.5;
+    console.log(shoe2.price);
+
+
+</script>
+
+    
+</body>
+</html>
