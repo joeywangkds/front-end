@@ -1,0 +1,3 @@
+<?php
+
+$username = "Mr.Wang";
