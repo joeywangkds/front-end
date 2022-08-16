@@ -21,8 +21,20 @@ class Demo1{
 
      public function __call($name, $arguments)
      {
-        printf('The function name is : %s, and the info is <pre>%s</pre>',$name,$arguments);
-        var_dump($arguments);
+        printf('The function name is : %s, and the info is <pre>%s</pre>',$name,print_r($arguments,true));
+     
+        
+     }
+
+   //   public static function world($a,$b){
+
+   //   }
+
+     public static function __callStatic($name, $arguments)
+
+     {
+        printf('The function name is : %s, and the info is <pre>%s</pre>',$name,print_r($arguments,true));
+     
         
      }
 
@@ -33,7 +45,9 @@ $obj = new Demo1();
 
 $obj2 = new Demo1();
 
-$obj2->hello(20);
+$obj2->hello('joey','wala');
+
+Demo1::world(100,200);
 
 
 
