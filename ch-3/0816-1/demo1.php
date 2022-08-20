@@ -3,9 +3,22 @@
 
 namespace pdo_edu;
 
-use PDO;
-$dsn = 'mysql:host = localhost;dbname=phpedu;port:3306;charset = utf8';
-$username = 'root';
-$password = 'root';
-$db  = new PDO($dsn, $username, $password);
-var_dump($db);
+//1.connect to database
+require __DIR__ .'/config/connect.php';
+
+
+//2.CURD 
+
+// SELECT * FROM `staff` WHERE `name` = 'admin';
+$sql ="INSERT `staff` SET `name` = 'admin',`gender` = 1,`email` = 'joey@test.com'";
+
+
+$stmt = $db->prepare($sql);
+
+// var_dump($stmt);
+
+if($stmt->execute()){
+    echo "success";
+}else{
+    echo "not success";
+}
