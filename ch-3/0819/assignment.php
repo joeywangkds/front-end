@@ -170,34 +170,27 @@ function createPages(int $page, int $pages): array
 
     <form action="">
         <br>
-    <input type="number" id="fname" name="p"><br><br>
-    <button>submit</button>
+        <input type="number" id="fname" name="p"><br><br>
+        <button>submit</button>
     </form>
 
 
-    <p> <?php
-        
-        
-
-        $page = $_GET['p'] ?? 1; ?>
+    <p> <?php $page = $_GET['p'] ?? 1; ?>
         <?php $results = createPages($page, $totalPage);
 
         // var_dump($results);
-
         foreach ($results as $result) {
-            $active= ($result == $_GET['p']) ? 'active' : null;
-            if($result != NULL){
-                echo '<a href='.$_SERVER['PHP_SELF'].'?p=' . $result. ' class ="'.$active.'">'. $result.'</a>';
-                
-            }else{
+            $page = $_GET['p'] ?? 1;
+            $active = ($result == $page) ? 'active' : null;
+            if ($result != NULL) {
+                echo '<a href=' . $_SERVER['PHP_SELF'] . '?p=' . $result . ' class ="' . $active . '">' . $result . '</a>';
+            } else {
                 echo '<a href="">...</a>';
             }
-            
-        
         }
         ?>
-        
-        
+
+
     </p>
 </body>
 

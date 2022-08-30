@@ -1,0 +1,17 @@
+{
+    "autoload": {
+        "classmap": [
+            "inc/",
+            "MyClass.php"
+        ],
+        "files": [
+            "config/connect.php"
+        ],
+        "psr-4": {
+            "phpcn\\": "admin/"
+        }
+    },
+    "require": {
+        "gregwar/captcha":"1.1.*"
+    }
+}
