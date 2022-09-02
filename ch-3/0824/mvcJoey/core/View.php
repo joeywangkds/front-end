@@ -10,11 +10,10 @@ class View
     public function display($data)
     {
 
-        
 
         $staffs = $data;
 
-        include "show.php";
+        include ROOTPATH.'/view/show.php';
         
         
     }

@@ -16,7 +16,7 @@ class Controller
 
     public function index()
     {
-        $data = $this->model->getAll(20);
+        $data = $this->model->getAll(10);
         $this->view->display($data);
     }
 }
