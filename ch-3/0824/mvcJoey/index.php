@@ -29,7 +29,7 @@ $class = ucfirst($c).'Controller';
 
 require __DIR__.'/controller/'.$class.'.'."php";
 
-$view = new View();
+// $view = new View();
 
 $fullClass = __NAMESPACE__.'\\'.$class;
 // echo $fullClass;
