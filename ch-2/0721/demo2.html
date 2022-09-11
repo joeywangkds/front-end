@@ -22,13 +22,14 @@
 
             getUserInfo(){
                 return this.name + '：' + this.email;
+            },
+
+            // 箭头函数
+            getUserInfo2: ()=>  user.name + '：' + user.email,
             }
-            
-
-
-        }
-
+    
         console.log(user.getUserInfo());
+        console.log(user.getUserInfo2());
 
     </script>
 

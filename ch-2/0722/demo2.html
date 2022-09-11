@@ -9,6 +9,8 @@
 <body>
     <script>
 
+        //JS的继承 - 开始
+
         let Parent = function(){};
         Parent.prototype.sum = function(a,b){
             return this.a + this.b;
@@ -24,46 +26,15 @@
         let child = new Child(100,200);
         // console.log(child.sum());
 
-        class Demo1{
-            constructor(name,email){
-                this.name = name;
-                this.email = email ;
-            }
+        //JS的继承 - 结束
 
-            getInfo(){
-                return `${this.name} : ${this.email} `;
-            }
-
-            static status = 'rest';
-
-        }
-        let obj1 = new Demo1('Joey','test@test.com')
-        console.log(obj1.getInfo());
-        console.log(Demo1.gender);
-
-        class Demo2 extends Demo1{
-            constructor(name,email,gender){
-                super(name,email);
-                this.gender = gender;
-            }
-
-            getInfo(){
-                return `${this.name} : ${this.email} , the gender is ${this.gender}`;
-            }
-        }
-
-        let obj2 = new Demo2('Li','ew@text.com','female');
-        console.log(obj2.getInfo());
-
-
-
-        // console.log(Demo1.getInfo('Joey','test@test.com'));
+   
 
 
 
 
 
-
+// 2048^2^
 
 
     </script>

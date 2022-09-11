@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        let item = {};
+
+        item.name = 'phone';
+
+        item.getName = function () {
+            return this.name;
+        }
+
+
+        item.setName = function (newName) {
+            this.name = newName;
+        }
+
+        item.setName('computer');
+
+        console.log(item.getName());
+
+        let User = function (name, email) {
+            this.name = name;
+            this.email = email;
+        }
+
+        User.prototype.getInfo = function () {
+            return `name: ${this.name}, email: ${this.email}`;
+        }
+
+        let user1 = new User('Joey', 'joey@test.com');
+
+        console.log(user1);
+
+        console.log(user1.getInfo());;
+
+    </script>
+
+</body>
+
+</html>

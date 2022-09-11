@@ -53,6 +53,21 @@
         for(let item of arr2.values()){
             console.log(item);
         }
+
+        for(let item of arr2.entries()){
+            console.log('key-value: '+ item);
+        }
+
+        const obj = {
+            a: 1,
+            b: 2,
+            f: function () {},
+        };
+
+        for (let key in obj){
+            console.log(obj[key ]);
+        }
+
         
         
 

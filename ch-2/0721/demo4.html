@@ -1,36 +1,43 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
+
 <body>
     <script>
         // let fn = (a,b) =>a+b;
 
-        let d =40;
+        let d = 40;
 
-        let fn = function (a,b) {
+        let fn = function (a, b) {
             c = 30;
             return a + b + c + d;
         }
 
-        console.log(fn(10,20)); 
+        console.log(fn(10, 20));
 
-        parentFn = function(a){
-            sonFn = function(b){
-                return a+b;
+        parentFn = function (a) {
+            sonFn = function (b) {
+                return a + b;
             }
             return sonFn;
         }
 
-        let f1 =parentFn(10);
+        let f1 = parentFn(10);
         console.log(parentFn(10)(20));
 
+        let fn1 = a => b => c => a + b + c;
 
-        
+        console.log(fn1(1)(2)(3));
+
+
+
     </script>
 </body>
+
 </html>

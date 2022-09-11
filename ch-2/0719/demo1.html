@@ -21,7 +21,7 @@
        
         console.log(
             (function(username){
-            return 'hello' + username;
+            return 'hello ' + username;
         })('wala')
         ); 
 
@@ -31,17 +31,25 @@
 
         console.log(getUsername('haya'));
 
+
+
+        // 1
         getName = function(username){
             return 'hello ' + username;
         }
 
-        console.log(getName('hawa'));
+        // console.log(getName('hawa'));
 
+        // 2
         getUsername2 = username =>{
             return 'hello ' + username;
         }
 
         console.log(getUsername2('kawa'));
+
+        // 3
+        getUsername2 = username =>'hello ' + username;
+        
 
 
         const arr = ['computer', 2, 5000];
@@ -70,3 +78,17 @@
     
 </body>
 </html>
+
+// 1
+getName = function(username){
+    return 'hello ' + username;
+}
+
+
+// 2
+getUsername2 = username =>{
+    return 'hello ' + username;
+}
+
+// 3
+getUsername2 = username =>'hello ' + username;
