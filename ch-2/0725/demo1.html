@@ -7,16 +7,32 @@
     <title>Document</title>
 </head>
 <body>
+    <ul class="list">
+        <li class="item">item1</li>
+        <li class="item">item2</li>
+        <li class="item">item3</li>
+        <li class="item">item4</li>
+        <li class="item">item5</li>
+        <li class="item">item6</li>
+    </ul>
 
     <script>
+        const items= document.querySelectorAll('.list .item');
+        console.log(items);
 
-        const animals = {
-            0: 'dog',
-            1: 'cat',
-            length:2,
-        };
+        items.forEach(function(v,k){
+            console.log(k,v);
+        });
 
-        console.log(animals);
+        items.forEach(function(v){
+            console.log(v);
+        });
+
+        items.forEach(v =>  console.log(v));
+        
+        
+
+        
         
     </script>
     
