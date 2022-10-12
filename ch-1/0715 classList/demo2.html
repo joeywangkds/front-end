@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>events 添加与删除</title>
+</head>
+
+<body>
+    <button>element object</button>
+    <button>element object listener</button>
+    <div class="elementor-image-box-img" style="border: 1px solid black ;"><a
+            href="https://betterhealthprogram.org/wp-content/uploads/2022/09/BHPO_ReferralForm_WADOH_2022_V7-2.pdf"
+            target="_blank"><img width="42" height="42"
+                src="https://betterhealthprogram.org/wp-content/uploads/2022/06/arrow-next.svg"
+                class="attachment-full size-full entered lazyloaded" alt=""
+                data-lazy-src="https://betterhealthprogram.org/wp-content/uploads/2022/06/arrow-next.svg"
+                data-ll-status="loaded"><noscript><img width="42" height="42"
+                    src="https://betterhealthprogram.org/wp-content/uploads/2022/06/arrow-next.svg"
+                    class="attachment-full size-full" alt="" /></noscript></a></div>
+
+
+    <script>
+        const btn1 = document.querySelector('button:first-of-type');
+        // btn1.onclick = function() {
+        //     console.log(btn1.textContent);
+        // };
+        btn1.onclick = () => console.log(event);
+
+
+        // const btn2 = document.querySelector('button:nth-of-type(2)');
+        // btn2.addEventListener();
+
+        let target = document.querySelector('.elementor-image-box-img:first-of-type');
+        let target2 = document.querySelector('.elementor-image-box-img:nth-of-type(2)');
+        let child2 = target2.querySelector ('img:first-child');
+        child2.style.marginLeft = '-20px';
+
+        let child = target.querySelector('img:first-child');
+        
+        console.log(child);
+        child.style.marginLeft = '110px';
+
+
+    </script>
+
+    <style>
+        /* .elementor-image-box-img{
+            height: 200px;
+        } */
+    </style>
+
+</body>
+
+</html>

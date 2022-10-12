@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Hello php</h1>
+    <style>
+        .red{
+            color: red;
+        }
+
+        .bgc{
+            background-color: cadetblue;
+        }
+
+        .blue{
+            color: blue;
+        }
+    </style>
+<script>
+    const h1 = document.querySelector('h1');
+    // console.log(h1.className);
+
+    h1.classList.add('red', 'bgc'); //1.add() 添加class
+
+    console.log(h1.classList.contains('red') ); // 2.contains  查看是否存在class
+
+    h1.classList.replace('red','blue'); //3.replace('x','y');  用y class替换 x class
+
+    h1.classList.remove('bgc'); //4.remove('x') 删除x class
+
+    h1.classList.toggle('blue'); //5.toggle() 有就删除，没有就加上
+
+
+
+
+
+
+</script>
+</body>
+</html>
