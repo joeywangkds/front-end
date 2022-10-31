@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <button>元素对象</button>
+    <h1>This is working area</h1>
+    <script>
+        let h1 = document.querySelector('h1');
+        let btn1 = document.querySelector('button:first-of-type');
+        btn1.onclick = function(){
+            if(h1.classList.contains('bgc')){
+                h1.classList.remove('bgc');
+            }else{
+                h1.classList.add('bgc');
+            }
+            
+        }
+        
+    </script>
+
+    <style>
+        .bgc{
+            background-color: red;
+        }
+    </style>
+    
+</body>
+</html>

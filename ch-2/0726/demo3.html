@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <input type="text" onkeydown="addMsg(this)" placeholder="please input" autofocus>
+    <ul class="list">
+        <!-- <li>1</li> -->
+    </ul>
+    <script>
+
+
+        function addMsg(ele) {
+            // console.log(ele);
+            // console.log(event.key);
+
+            if (event.key === 'Enter') {
+                if (ele.value.length === 0) {
+                    alert('can\'t be empty!');
+                    ele.focus();
+                    return false;
+                }
+                // console.log(ele.value);
+                const li = document.createElement('li');
+                // li.append(ele.value);
+                // document.querySelector('.list').append(li);
+                // document.querySelector('.list').append(li);
+
+                let ul = document.querySelector('.list');
+                // ul.insertAdjacentElement('afterBegin',li);
+
+                ele.value = ele.value + ' <button onclick = "del(this.parentNode)">delete</button>';
+                ul.insertAdjacentHTML('afterBegin', `<li>${ele.value}</li>`);
+                ele.value = null;
+            }
+        }
+
+        function del(ele) {
+            // if (confirm('delete?')) {
+            //     ele.remove();
+            // } 
+            // 等于：
+
+            return confirm('delete?') ? ele.remove() : false;
+            // return confirm('delete?') ? (ele.outerHTML = null) : false;
+
+
+        }
+    </script>
+
+</body>
+
+</html>

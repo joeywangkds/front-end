@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <div class="box">
+        <h1>Notice</h1>
+        <p>This is a text message.</p>
+    </div>
+
+    <script>
+        const box = document.querySelector('.box');
+        console.log(box.textContent);
+        console.log(box.innerHTML);
+
+        const p = document.createElement('p');
+        // let newBox = box.append(p);
+        let content = 'this is content';
+        p.innerHTML = content;
+        box.append(p);
+        console.log(box);
+        console.log(box.outerHTML);
+
+    </script>
+    
+</body>
+</html>

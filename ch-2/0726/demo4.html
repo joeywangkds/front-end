@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>自定义输定对象dataset</title>
+</head>
+
+<body>
+
+    <div class="btn-group">
+        <button data-index="1" onclick="console.log(this.dataset.index);">btn1</button>
+        <button data-index="2" onclick="console.log(this.dataset.index);">btn2</button>
+        <button data-index="3" onclick="console.log(this.dataset.index);">btn3</button>
+    </div>
+
+    <div class="email" data-my-email = "spiderkds@gmail.com">My email</div>
+
+    <script>
+        let div = document.querySelector('.email');
+        console.log(div.dataset.myEmail);
+    </script>
+
+
+</body>
+
+</html>
