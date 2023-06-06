@@ -12,8 +12,9 @@ body header .menu{
 }
 
 header .menu > a:first-of-type{
-    width: 100px;
-    height: 100px;
+    /* width: 100px;
+    height: 100px; */
+    padding: 20px;
 }
 
 header .menu > a:not(:first-of-type){
