@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Document</title>
+</head>
+
+<body>
+
+<h1>test</h1>
+
+
+    <script>
+        const h1 = document.querySelector('h1');
+        h1.classList.add('red','bgc');
+        console.log(h1.classList.contains('red') );
+        let name = "joey";
+        let email = 'test@test.com';
+        let user = {
+            name,
+            email,
+            getInfo() {
+                return this.name + ':' + this.email
+            }
+        };
+
+        console.log(user.getInfo());
+
+
+        let dis = 0.5;
+
+        getPrice = (price, discount) => price * discount;
+
+
+        console.log(getPrice(100, dis));
+
+
+        var summation = function (num) {
+            // Code here
+            //   return num;
+            let sum = 0;
+            let i;
+            for (i = 0; i < num; i++) {
+                sum = sum + i;
+            }
+            return sum;
+        }
+
+        console.log(summation(2));
+
+
+    </script>
+
+    <style>
+        .red{
+            background-color: #00a38b;
+        }
+        @media screen and (max-width: 959px) {
+
+            .left-radius>.style-light>.uncoltable>.single-block-padding {
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+
+            .right-radius>.style-light>.uncoltable>.single-block-padding {
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+            }
+
+        }
+
+        @media screen and (min-width: 960px) {
+
+            .left-radius>.style-light>.uncoltable>.single-block-padding {
+                border-top-left-radius: 20px;
+                border-bottom-left-radius: 20px;
+            }
+
+            .right-radius>.style-light>.uncoltable>.single-block-padding {
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+
+        }
+    </style>
+
+    <style>
+        @media screen and (max-width: 959px) {
+
+            .wp-image-100215,
+            .right-radius,
+            .style-color-575871-bg {
+                border-bottom-left-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+
+
+            .right-radius>.style-light>.uncoltable>.style-accent-bg,
+            .wp-image-100780 {
+
+                border-top-left-radius: 20px;
+                border-top-right-radius: 20px;
+
+            }
+        }
+
+        @media screen and (min-width: 960px) {
+
+            .wp-image-100215,
+            .right-radius，.style-color-575871-bg {
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+
+
+
+            .right-radius>.style-light>.uncoltable>.style-accent-bg,
+            .wp-image-100780 {
+                border-top-right-radius: 20px;
+                border-bottom-right-radius: 20px;
+            }
+
+
+        }
+    </style>
+
+</body>
+
+</html>

@@ -1,0 +1,25 @@
+.menu-toggle, button, .ast-button, .ast-custom-button, .button, input#submit, input[type="button"], input[type="submit"], input[type="reset"] {
+    border-style: solid;
+    border-top-width: 0;
+    border-right-width: 0;
+    border-left-width: 0;
+    border-bottom-width: 0;
+    color: #373A36 !important;
+    border-color: #ecc034;
+    background-color: #ecc034;
+    padding-top: 11px;
+    padding-right: 15px;
+    padding-bottom: 12px;
+    padding-left: 15px;
+    font-family: inherit;
+    font-weight: 600;
+    font-size: 15px;
+    font-size: 0.8rem;
+    line-height: 1em;
+    text-transform: capitalize;
+    letter-spacing: 1px;
+    border-top-left-radius: 5px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    border-bottom-left-radius: 5px;
+}
